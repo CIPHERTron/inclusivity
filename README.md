@@ -4,6 +4,16 @@ Project made during Hackviolet Hackathon
 ## ABOUT
 Inclusivity is a webapp built on **React.js**, **Material UI** and Firebase tools such as **Cloud Firestore** and **Firebase Auth**. In this, a user can signup or login and can view all types of **Internships**, **Fellowships**, **Internships** and **Placement** Opportunities. We managed to collect the data with the help of a **Web scrapper** using **Selenium** and **LinkedIn API**. The webapp has all kind of opportunities ranging from **open to all categories of genders** to opportunities **specific only to Women and LGBTQIA Community**.
 
+## **How to start the app?**
+- Fork the repo
+- Clone it using `git clone https://github.com/CIPHERTron/inclusivity.git`
+- cd into the directory
+- run `npm install`
+- then run `npm start`
+- The app will run at port 8000
+
+<hr>
+
 ### **SCREENSHOTS OF THE WEB APP**
 ![Scholarship Page](./src/assets/images/2.png)
 ![Fellowship Page](./src/assets/images/3.png)
