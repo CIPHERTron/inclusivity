@@ -1,7 +1,22 @@
 import React from "react";
 import "./Login.css";
 
-export default function Login() {
+export default function Login(props) {
+    const {
+      email,
+      setEmail,
+      password,
+      setPassword,
+      handleLogin,
+      handleSignup,
+      hasAccount,
+      setHasAccount,
+      emailError,
+      passwordError,
+      name,
+      setName
+  } = props;
+
   const toggleForm = () => {
     const container = document.querySelector(".container");
     container.classList.toggle("active");
@@ -20,14 +35,14 @@ export default function Login() {
           <div className="formBx">
             <form action="">
               <h2>Sign In</h2>
-              <input type="email" name="" placeholder="Email Address" />
-              <input type="password" name="" placeholder="Password" />
-              <input type="submit" name="" value="Login" />
+              <input type="text" required value={email} placeholder="Email Address" onChange={(e) => setEmail(e.target.value)} />
+              <input type="password" required value={password} placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
+              <input type="submit" name="" value="Login" onClick={handleLogin} />
               <p className="signup">
                 Don't have an account ?
-                <a href="#" onClick={toggleForm}>
+                <p style={{color: 'blue', textDecoration: 'underline', cursor: 'pointer', fontWeight: '800'}} onClick={toggleForm}>
                   Sign Up.
-                </a>
+                </p>
               </p>
             </form>
           </div>
@@ -35,19 +50,23 @@ export default function Login() {
         <div className="user signupBx">
           <div className="formBx">
             <form action="">
-            <h2>Welcome to</h2>
-            <h2><strong>CODE CANNIBALS</strong></h2>
-              <h2>Create an account</h2>
+            <h2>Welcome to Inclusivity</h2>
               <input type="text" name="" placeholder="Name" />
-              <input type="email" name="" placeholder="Email Address" />
-              <input type="password" name="" placeholder="Create Password" />
-              <input type="password" name="" placeholder="Confirm Password" />
-              <input type="submit" name="" value="Sign Up" />
+              {/* <label>Pronoun: </label>
+              <select>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+              </select> */}
+              <input type="email" required value={email} placeholder="Email Address" onChange={(e) => setEmail(e.target.value)} />
+              <input type="password" required value={password} placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
+              <input type="submit" name="" value="Sign Up" onClick={handleSignup} />
               <p className="signup">
                 Already have an account ?
-                <a href="#" onClick={toggleForm}>
+                <p style={{color: 'blue', textDecoration: 'underline', cursor: 'pointer', fontWeight: '800'}} onClick={toggleForm}>
                   Sign in.
-                </a>
+                </p>
               </p>
             </form>
           </div>

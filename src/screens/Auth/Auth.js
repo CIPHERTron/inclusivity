@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import Firebase from '../../config/firebase'
-import Patient from '../../views/Patient/Patient'
+import Firebase from '../../config/Firebase'
+import Profile from '../Profile/Profile'
 import Login from './Login'
 
 export default function Auth() {
@@ -23,7 +23,8 @@ export default function Auth() {
 		setPasswordError('');
 	};
  
- const handleLogin = () => {
+ const handleLogin = (e) => {
+		e.preventDefault();
 		clearErrors();
   Firebase.auth()
   .signInWithEmailAndPassword(email, password)
@@ -43,7 +44,8 @@ export default function Auth() {
 		console.log('Email: ', email);
  }
 
- const handleSignup = () => {
+ const handleSignup = (e) => {
+		e.preventDefault();
   clearErrors();
 		Firebase.auth()
 			.createUserWithEmailAndPassword(email, password)
@@ -59,21 +61,17 @@ export default function Auth() {
 						default:
 				}
 			});
- };
 
-	const handleLogout = () => {
-		Firebase.auth().signOut();
-	};
+			
+ };
  
 	const authListener = () => {
 		Firebase.auth().onAuthStateChanged(user => {
 			if (user) {
 				clearInputs();
-				console.log(user);
 				setUser(user);
 				setUid(user.uid);
 				setEmail(user.email);
-				console.log("User ID: ",uid);
 			} else {
 				setUser('');
 			}
@@ -84,16 +82,12 @@ export default function Auth() {
 	useEffect(() => {
 		authListener();
 		// eslint-disable-next-line react-hooks/exhaustive-deps
- }, []);
- {/* <Demo handleLogout={handleLogout} /> */}
+	}, []);
+	
  return(
   <>
      { user ? (
-      <Patient 
-        handleLogout={handleLogout} 
-        email={email}
-        uid={uid}
-      />
+      <Profile email={email} uid={uid} />
     ) : (
     <Login
       email={email}
