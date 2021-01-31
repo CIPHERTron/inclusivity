@@ -58,16 +58,16 @@ export default function Profile(props) {
    <Card className={classes.root} variant="outlined">
       <CardContent>
       <Typography variant="h4" className={classes.pos} color="textSecondary">
-         Name: {name || `Pritish Samal`}
+         Name: Pritish Samal
         </Typography>
         <Typography variant="h5" className={classes.title} color="textSecondary" gutterBottom>
-         Email ID: {email}
+         Email ID: pritish@gmail.com
         </Typography>
         <Typography variant="h6" color="textSecondary">
-          Pronoun: {pronoun || `he/him`}
+          Pronoun: he/him
         </Typography>
         <Typography variant="h6" color="textSecondary">
-         Unique ID: {uid}
+         Unique ID: f6TMyfmAOcNHtTGQtvq0lws8VRw1
         </Typography>
       </CardContent>
     </Card>
@@ -80,7 +80,7 @@ const useStyles = makeStyles({
  root: {
    maxWidth: 500,
    margin: '0 auto',
-   marginTop: '2rem',
+   marginTop: '15rem',
    textAlign: 'center',
    backgroundColor: '#7cffcb',
    backgroundImage: 'linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%)'

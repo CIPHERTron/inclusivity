@@ -9,12 +9,6 @@ export default function Login(props) {
       setPassword,
       handleLogin,
       handleSignup,
-      hasAccount,
-      setHasAccount,
-      emailError,
-      passwordError,
-      name,
-      setName
   } = props;
 
   const toggleForm = () => {
@@ -52,13 +46,12 @@ export default function Login(props) {
             <form action="">
             <h2>Welcome to Inclusivity</h2>
               <input type="text" name="" placeholder="Name" />
-              {/* <label>Pronoun: </label>
+              <label>Pronoun: </label>
               <select>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
-              </select> */}
+                <option value="volvo">He/Him</option>
+                <option value="saab">She/Her</option>
+                <option value="fiat">They/Them</option>
+              </select>
               <input type="email" required value={email} placeholder="Email Address" onChange={(e) => setEmail(e.target.value)} />
               <input type="password" required value={password} placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
               <input type="submit" name="" value="Sign Up" onClick={handleSignup} />

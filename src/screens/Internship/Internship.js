@@ -12,6 +12,30 @@ export default function Internship() {
    <Navbar />
    <div style={{display: 'flex', flexDirection: 'column'}}>
    <div className={classes.cards}>
+    <h1>Google STEP Intern</h1>
+    <p>STEP (Student Training in Engineering Program), formerly known as Engineering Practicum, is a 12-week internship for first and second-year undergraduate students with a passion for computer science. The internship program has a focus of providing development opportunities to students from groups historically underrepresented in tech, through technical training and professional development.</p>
+    <a href='https://buildyourfuture.withgoogle.com/programs/step/' style={{textAlign: 'right'}}>Learn More</a>
+   </div>
+   </div>
+
+   <div style={{display: 'flex', flexDirection: 'column'}}>
+   <div className={classes.cards}>
+    <h1>Microsoft Codess</h1>
+    <p>Codess is a global platform by Microsoft to encourage women in the field of technology. In India too they host networking events for female engineering students to network, learn from each other and receive mentorship from Microsoft Employees</p>
+    <a href='https://www.codess.net/' style={{textAlign: 'right'}}>Learn More</a>
+   </div>
+   </div>
+
+   <div style={{display: 'flex', flexDirection: 'column'}}>
+   <div className={classes.cards}>
+    <h1>Adobe #SheCodes </h1>
+    <p>The Adobe India Women-in-Technology Scholarship, is striving towards creating gender equality in science, technology and engineering domains by encouraging women to showcase their excellence in computing and technology and become future leaders and role models in the field. </p>
+    <a href='https://research.adobe.com/adobe-india-women-in-technology-scholarship/' style={{textAlign: 'right'}}>Learn More</a>
+   </div>
+   </div>
+
+   <div style={{display: 'flex', flexDirection: 'column'}}>
+   <div className={classes.cards}>
     <h1>FII’s Internship Programs</h1>
     <p>Feminism In India (FII) is an award-winning digital intersectional feminist platform to learn, educate and develop a feminist sensibility and unravel the F-word among the youth in India. It aims to become a one-stop platform for everything related to feminism in India. FII offers full-time office based paid internships and part-time online unpaid internships. The internships are open to both students and young professionals. Read closely before applying!</p>
     <a href='https://feminisminindia.com/intern-with-feminism-in-india-fii/' style={{textAlign: 'right'}}>Learn More</a>
@@ -48,7 +72,7 @@ For more information, or to discuss internship ideas, email or make an appointme
 
    <div style={{display: 'flex', flexDirection: 'column'}}>
    <div className={classes.cards}>
-    <h1></h1>
+    <h1>DEPARTMENT OF GENDER, WOMEN & SEXUALITY STUDIES</h1>
     <p>The list of internship sites presented below is suggestive, rather than comprehensive. Most of the sites are places where a Gender, Women & Sexuality Studies student has already done an internship. Where possible, we have provided a link to the site's home page or volunteer information page. Please see the GWSS Adviser for more information.</p>
     <a href='https://gwss.washington.edu/internship-sites' style={{textAlign: 'right'}}>Learn More</a>
    </div>
@@ -56,27 +80,9 @@ For more information, or to discuss internship ideas, email or make an appointme
 
    <div style={{display: 'flex', flexDirection: 'column'}}>
    <div className={classes.cards}>
-    <h1>A. Gordon Rose Scholarship</h1>
-    <p>Funds scholarships for CPS graduate psychology student committed to research and professional work to increase self and community acceptance for gay people.</p>
-    <a href='https://psychology.nova.edu/common-pdf/students/scholarships-rose.pdf' style={{textAlign: 'right'}}>Learn More</a>
-   </div>
-   </div>
-
-   <div style={{display: 'flex', flexDirection: 'column'}}>
-   <div className={classes.cards}>
-    <h1>POINT Scholarship</h1>
-    <p>Point Foundation (Point) is the nation’s largest higher education scholarship-granting organization for lesbian, gay, bisexual, transgender, and queer (LGBTQ) students. Point’s multifaceted support of its scholarship recipients (“scholars”) extends far beyond direct financial contribution toward the cost of their education. Each scholar is paired with a mentor and participates in leadership development programs and events.</p>
-    <a href='https://pointfoundation.org/thepoint/scholarship/' style={{textAlign: 'right'}}>Learn More</a>
-   </div>
-   </div>
-
-   <div style={{display: 'flex', flexDirection: 'column'}}>
-   <div className={classes.cards}>
-    <h1>Nitros List of General Scholarships for STEM  </h1>
-    <p>It's probably not a newsflash that  women are still largely outnumbered by their male counterparts in science and engineering.
-
-What might be news: More colleges and employers are making it a priority to get women into STEM fields—and they're making financial investments to back that up. That means there are ever-growing options for female students who are hunting for scholarships. Here's how to find that sweet "free money" to help fund your STEM education. </p>
-    <a href='https://www.nitrocollege.com/blog/ultimate-guide-stem-scholarships' style={{textAlign: 'right'}}>Learn More</a>
+    <h1>CodeDay Labs Online Tech Internship for Everyone</h1>
+    <p>There's never been a better time to become a software engineer. Not only do these roles pay well, but the career path is highly mobile and the work often focuses on problem solving and innovation. Learn how MLT can help you break into this exciting industry. Some key facts for consideration: </p>
+    <a href='https://labs.codeday.org/' style={{textAlign: 'right'}}>Learn More</a>
    </div>
    </div>
   </>
@@ -86,8 +92,8 @@ What might be news: More colleges and employers are making it a priority to get 
 const useStyles = makeStyles({
 cards: {
  textAlign: 'center',
- backgroundColor: '#eec0c6',
- backgroundImage: 'linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%)',
+ backgroundColor: '#e899dc',
+ backgroundImage: 'linear-gradient(315deg, #e899dc 0%, #d387ab 74%)',
  padding: '2rem',
  margin: '1rem 2rem',
  boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
