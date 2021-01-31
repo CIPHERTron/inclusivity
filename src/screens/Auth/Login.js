@@ -1,6 +1,9 @@
 import React from "react";
 import "./Login.css";
 
+import login from '../../assets/images/login.jpg'
+import signup from '../../assets/images/signup.jpg'
+
 export default function Login(props) {
     const {
       email,
@@ -22,7 +25,7 @@ export default function Login(props) {
         <div className="user signinBx">
           <div className="imgBx">
             <img
-              src="https://images.unsplash.com/photo-1486546910464-ec8e45c4a137?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1902&q=80"
+              src={login}
               alt=""
             />
           </div>
@@ -65,7 +68,7 @@ export default function Login(props) {
           </div>
           <div className="imgBx">
             <img
-              src="https://images.unsplash.com/photo-1567935850829-e52d7bfe37ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+              src={signup}
               alt=""
             />
           </div>
